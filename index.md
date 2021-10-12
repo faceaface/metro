@@ -10,26 +10,6 @@
 <body>
     <table>
         <tr class="table">
-            <td class="numero" style="background-color:#e60002">1</td>
-            <td class="street">Avenue Valery Giscard d'Estaing</td>
-            <td class="numero" style="background-color:rgb(252, 244, 0); color: black;">2</td>
-            <td class="street">Jeu d'esprit</td>
-            <td class="numero" style="background-color:rgb(255, 134, 0)">3</td>
-            <td class="street">Rue Ockrent <br>La Defense</td>
-            <td class="numero" style="background-color:rgb(17, 203, 255)">4</td>
-            <td class="street">Rue Mitterrand</td>
-        </tr>
-        <tr class="table">    
-            <td class="numero" style="background-color:rgb(0, 208, 220)">5<span class="date">59</span></td>
-            <td class="street">Boulevard Jean Baudrillard </td>      
-            <td class="numero" style="background-color:rgb(60, 165, 36)">6</td>
-            <td class="street">Ⓜ2 Avenue Vieux <br> Ⓜ1 Valery Giscard d'Estaing</td> 
-            <td class="numero" style="background-color:#571d2e;">7</td>
-            <td class="street">Avenue Jacques Chirac<br>Ⓜ12 Jean-Louis Curtis</td>
-            <td class="numero" style="background-color:#E60000;">8</td>
-            <td class="street">Aeroport Escobar <br>Aeroport Pierre-Elliot Trudeau</td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(240, 1, 6)">9 <span class="date">27</span></td>
             <td class="street">Avenue Radiale <br>Merca</td>
             <td class="numero" style="background-color:#BD3F83;">10</td>
