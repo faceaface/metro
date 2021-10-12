@@ -4,594 +4,359 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Octobre 2021</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+    @import url('https://db.onlinewebfonts.com/c/29800a9e7d146302b8ed9ad2f848db63?family=Druk+Wide+Web+Bold');
+        @font-face {
+            font-family: "Parisine Bold";
+            src: url("Parisine-Bold.otf");
+        }
+        @font-face {
+            font-family: "Parisine";
+            src: url("Parisine-Regular.otf");
+        }
+        @font-face {
+            font-family: "Druk Wide";
+            src: url("Druk_Wide_Bold.ttf");
+        }
+        @font-face {
+            font-family: "Futura Bold";
+            src: url("futurabold.ttf");
+        }
+        
+        
+        body{
+            font-family: "PT Sans", "Franklin Gothic Medium", monospace;            
+        }
+        .table{
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;    
+        }
+        .streetOld{
+            background-color: #999;
+            font-size: 20px;
+            font-weight: 400;
+            width: 200px;
+            color: white;
+        }
+        table{
+            width:max-content;
+            margin-bottom: 48px;
+        }
+        .numero{
+            background: gold;
+            width: 80px;
+            font-weight: 900;
+            font-size: 64px;
+            text-align: center;
+            color: white;
+            position: relative;
+            font-family: "SF Arborcrest", "Franklin Gothic Medium", monospace;
+        }
+        table {            
+            line-height: 120%;
+        }
+        .street{
+            font-size: 24px;
+            font-weight: 400;
+            width: 200px;
+        }
+        .date{
+            font-size: 18px;
+            color: #bbb;
+            font-style: italic;
+            display: none;
+        }
+        .ferme{
+            font-size: 18px;
+            color: rgb(252, 244, 0);
+            font-style: italic;
+        }
+        
+        .numero > .date {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+        }
+        .subway{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            width: 400px;
+        }
+        
+        .subway h1{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+            width: 400px;
+        }
+        
+        .subway>span::before {
+            content: "• ";
+        }
+        
+        /*.subway .rep::before {
+            content: "• REP ";
+            font-style:italic;
+            font-weight: 900;
+            color: #0300B7;
+        }*/
+        
+        .subwayTable .numero {
+            font-size: 72px;
+        }
+        
+        .switch{
+            background-color: #0300B7;
+            font-style:italic;
+            font-weight: 900;
+            color: white;
+            padding-right: 4px;
+            margin: 0;            
+            display: inline-block;
+        }
+        
+        .switch::before{
+            content: "➔";
+            background-color: #0300B7;
+            font-style:italic;
+            font-weight: 900;
+            color: white;
+            padding-right: 4px;
+            margin: 0;
+            display: inline-block;
+        }
+        
+        .street > br{
+            display: block;
+            margin: 12px 0;
+            content: " ";
+        }
+        
+        
+        
+        
+        </style>
 </head>
 <body>
     <table>
         <tr class="table">
             <td class="numero" style="background-color:#e60002">1</td>
-            <td class="streetOld">Avenue Valery Giscard d'Estaing<br><span class="date">2108</span>
-                <br><span class="ferme">fermé jusqu'à nouvel ordre</span></td>
-        </tr>
-        <tr class="table">            
+            <td class="street">Avenue Valery Giscard d'Estaing</td>
             <td class="numero" style="background-color:rgb(252, 244, 0); color: black;">2</td>
             <td class="street">Jeu d'esprit</td>
-            <td class="numero" style="background-color:rgb(252, 244, 0); color: black;">2</td>
-            <td class="streetOld">Liberté Université<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(252, 244, 0); color: black;">2</td>
-            <td class="streetOld">Boulevard de Zola<br><span class="date">2051</span></td>
-            <td class="numero" style="background-color:rgb(0, 220, 224)">2</td>
-            <td class="streetOld">Boulevard d'Egalite<br><span class="date">2041</span></td>
-            <td class="numero" style="background-color:rgb(60, 165, 36)">2</td>
-            <td class="streetOld">Rue Sartre <br><span class="date">2032</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(255, 134, 0)">3</td>
             <td class="street">Rue Ockrent <br>La Defense</td>
-            <td class="numero" style="background-color:rgb(255, 134, 0)">3</td>
-            <td class="streetOld">Rue Ockrent<br><span class="date">2100</span></td>
-            <td class="numero" style="background-color:rgb(60, 165, 36)">3</td>
-            <td class="streetOld">Boulevard Prouste <br><span class="date">2061</span></td>
-            <td class="numero" style="background-color:rgb(13, 0, 221)">3</td>
-            <td class="streetOld">Rue d'Avignon<br><span class="date">2041</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(17, 203, 255)">4</td>
             <td class="street">Rue Mitterrand</td>
         </tr>
         <tr class="table">    
             <td class="numero" style="background-color:rgb(0, 208, 220)">5<span class="date">59</span></td>
-            <td class="street">Boulevard Jean Baudrillard </td>        
-            <td class="numero" style="background-color:rgb(172, 83, 113)">5</td>
-            <td class="streetOld">Rue Charles de Gaulles<br><span class="date">2100</span></td>
-            <td class="numero" style="background-color:rgb(255, 134, 0)">5</td>
-            <td class="streetOld">Rue Jacques Chirac<br><span class="date">2041</span></td>
-        </tr>
-        <tr class="table">
+            <td class="street">Boulevard Jean Baudrillard </td>      
             <td class="numero" style="background-color:rgb(60, 165, 36)">6</td>
             <td class="street">Ⓜ2 Avenue Vieux <br> Ⓜ1 Valery Giscard d'Estaing</td> 
-            <td class="numero" style="background-color:rgb(60, 165, 36)">6</td>
-            <td class="streetOld">Route de Saint-Exupery<br><span class="date">2108</span></td> 
-            <td class="numero" style="background-color:rgb(60, 165, 36)">6</td>
-            <td class="streetOld">Boulevard Jean-<br>François Liotard<br><span class="date">2086</span></td>
-            <td class="numero" style="background-color:rgb(68, 168, 45)">6</td>
-            <td class="streetOld">Boulevard Boutonnat<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(46, 100, 34)">6</td>
-            <td class="streetOld">Quebec <br>Ontario<br><span class="date">2061</span></td>
-            <td class="numero" style="background-color:salmon">6</td>
-            <td class="streetOld">Boulevard Jean Valjean<br><span class="date">2051</span></td>
-            <td class="numero" style="background-color:rgb(60, 165, 36)">6</td>
-            <td class="streetOld">Saint-Girard<br><span class="date">2041</span></td>
-            <td class="numero" style="background-color:rgb(86, 29, 46)">6</td>
-            <td class="streetOld">Route de nuit<br><span class="date">2025</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#571d2e;">7</td>
-            <td class="street">Avenue Jacques Chirac<br>Dante divertissement</td>
-            <td class="numero" style="background-color:rgb(189, 0, 16)">7</td>
-            <td class="streetOld">Avenue Jacques Chirac<br>Dante divertissement<br><span class="date">2108</span></td>
-            <td class="numero" style="background-color:rgb(189, 0, 16)">7</td>
-            <td class="streetOld">Avenue Jacques Chirac<br><span class="date">2100</span></td>
-            <td class="numero" style="background-color:rgb(25, 240, 211)">7</td>
-            <td class="streetOld">Rue Sarcozy<br><span class="date">2061</span></td>
-            <td class="numero" style="background-color:rgb(252, 244, 0); color: black;">7</td>
-            <td class="streetOld">Liberté Université<br><span class="date">2051</span></td>
-        </tr>
-        <tr class="table">
+            <td class="street">Avenue Jacques Chirac<br>Ⓜ12 Jean-Louis Curtis</td>
             <td class="numero" style="background-color:#E60000;">8</td>
             <td class="street">Aeroport Escobar <br>Aeroport Pierre-Elliot Trudeau</td>
-            <td class="numero" style="background-color:rgb(254, 234, 139); color: black;">8</td>
-            <td class="streetOld">Aeroport Escobar <br>Aeroport Pierre-Elliot Trudeau<br><span class="date">2108</span></td>
-            <td class="numero" style="background-color:rgb(254, 234, 139); color: black;">8</td>
-            <td class="streetOld">Aeroport Escobar <br>Parc des Princes<br><span class="date">2095</span></td>
-            <td class="numero" style="background-color:rgb(254, 234, 139); color: black;">8</td>
-            <td class="streetOld">Aeroport Escobar <br>Pernaut<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(60, 165, 36)">8</td>
-            <td class="streetOld">Rue Flaubert<br><span class="date">2061</span></td>
-            <td class="numero" style="background-color:rgb(60, 165, 36)">8</td>
-            <td class="streetOld">Rue d'Industrie<br><span class="date">2032</span></td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:rgb(240, 1, 6)">9 <span class="date">27</span></td>
             <td class="street">Avenue Radiale <br>Merca</td>
-            <td class="numero" style="background-color:rgb(10, 139, 158)">9</td>
-            <td class="streetOld">Vieux Avenue<br><span class="date">2099</span></td>
-            <td class="numero" style="background-color:rgb(34, 204, 120)">9</td>
-            <td class="streetOld">Rue Marie-Antoinette<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(60, 165, 36)">9</td>
-            <td class="streetOld">Boulevard Boutonnat<br><span class="date">2061</span></td>
-            <td class="numero" style="background-color:rgb(223, 3, 113)">9</td>
-            <td class="streetOld">Montfermeile<br><span class="date">2051</span></td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:#24D857;">10</td>
+            <td class="numero" style="background-color:#BD3F83;">10</td>
             <td class="street">Avenue Denise Fabre</td>
-            <td class="numero" style="background-color:rgb(251, 254, 0); color: black;">10</td>
-            <td class="streetOld">Horkhaimerstraße<br><span class="date">2100</span></td>
-            <td class="numero" style="background-color:salmon">10</td>
-            <td class="streetOld">Rue Balsac<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:salmon">10</td>
-            <td class="streetOld">Premiere route de Quebec<br><span class="date">2032</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#2435CD">11</td>
             <td class="street">Merca <br> Avenue Jules Verne</td>
-            <td class="numero" style="background-color:rgb(202, 33, 210)">11</td>
-            <td class="streetOld">Boulevard de Magenta<br><span class="date">2100</span></td>
-            <td class="numero" style="background-color:rgb(25, 240, 211)">11</td>
-            <td class="streetOld">Rue Sarcozy<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(17, 203, 255)">11</td>
-            <td class="streetOld">Quebec <br>Ontario<br><span class="date">2051</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#F8FE00; color: black;">12</td>
             <td class="street">Liberté Université <br>Ⓜ1 Egalité</td>
-            <td class="numero" style="background-color:rgb(251, 162, 18)">12</td>
-            <td class="streetOld">Liberté Université<br><span class="date">2108</span></td>
-            <td class="numero" style="background-color:rgb(251, 254, 0); color: black;">12</td>
-            <td class="streetOld">Rue Balsac<br><span class="date">2086</span></td>
-            <td class="numero" style="background-color:salmon">12</td>
-            <td class="streetOld">Avenue Ronald Reagan<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(100, 103, 206)">12</td>
-            <td class="streetOld">Boulevard Zola<br><span class="date">2041</span></td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(251, 162, 18)">13</td>
-            <td class="streetOld">Route de Besançon<br><span class="date">2032</span></td>
-        </tr>
         <tr class="table">
             <td class="numero" style="background-color:rgb(13, 0, 221)">14</td>
             <td class="street">Boulevard Saint Pepsi</td>
-            <td class="numero" style="background-color:rgb(13, 0, 221)">14</td>
-            <td class="streetOld">Boulevard Henri Petain<br><span class="date">2086</span></td>
-            <td class="numero" style="background-color:rgb(251, 162, 18)">14</td>
-            <td class="streetOld">Aeroport <br>Libertine<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(17, 203, 255)">14</td>
-            <td class="streetOld">Ile de Sezanne <br>Besançon<br><span class="date">2041</span></td>
-            <td class="numero" style="background-color:rgb(251, 254, 0); color: black;">14</td>
-            <td class="streetOld">Route d'Ile de Sezanne<br><span class="date">2032</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(230, 157, 42)">15</td>
             <td class="street">Rue Schönberg</td>
-            <td class="numero" style="background-color:rgb(20, 209, 74)">15</td>
-            <td class="streetOld">Avenue Hachette<br><span class="date">2061</span></td>
-            <td class="numero" style="background-color:rgb(125, 218, 63)">15</td>
-            <td class="streetOld">Avenue Rousseau<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#49BCFD;">16</td>
             <td class="street">Boulevard Rousillion<br>Boulevard Margaret Thatcher</td>
-            <td class="numero" style="background-color:#49BCFD;">16</td>
-            <td class="streetOld">Boulevard Rousillion<br>Avenue Circulaire<br><span class="date">2107</span></td>
-            <td class="numero" style="background-color:rgb(0, 145, 222)">16</td>
-            <td class="streetOld">Boulevard Rousillion<br><span class="date">2100</span></td>
-            <td class="numero" style="background-color:rgb(0, 145, 222)">16</td>
-            <td class="streetOld">Deuxieme rue Marquez<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#0983DA">17 <span class="date">72</span></td>
             <td class="street">Rue Roland Garros</td>
-            <td class="numero" style="background-color:rgb(0, 0, 156)">17</td>
-            <td class="streetOld">Rue Troisieme Republique<br><span class="date">2099</span></td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:rgb(151, 233, 221);">18</td>
             <td class="street">Rue Angleterre<br>Rue Brogile</td>
-            <td class="numero" style="background-color:rgb(151, 233, 221);">18</td>
-            <td class="streetOld">Rue Angleterre<br><span class="date">2100</span></td>
-            <td class="numero" style="background-color:rgb(151, 233, 221);">18</td>
-            <td class="streetOld">Rue Yves Simon<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:white; color: black;">18</td>
-            <td class="streetOld">Vieux Avenue<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#00FE47;">19</td>
             <td class="street">Avenue Moscou<br>Avenue Osamu Sato</td>
-            <td class="numero" style="background-color:rgb(200, 13, 7)">19</td>
-            <td class="streetOld">Avenue Moscou<br><span class="date">2100</span></td>
-            <td class="numero" style="background-color:rgb(200, 13, 7)">19</td>
-            <td class="streetOld">Rue Hawking<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#0B13DA;">20</td>
             <td class="street">Rue Balsac</td>
-            <td class="numero" style="background-color:rgb(90, 7, 4)">20</td>
-            <td class="streetOld">Boulevard Prouste<br><span class="date">2041</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#3D359D;">21</td>
-            <td class="street">Avenue Bernadet Chirac<br>Jeu d'esprit</td>
-            <td class="numero" style="background-color:rgb(213, 99, 3)">21</td>
-            <td class="streetOld">Avenue Bernadet Chirac<br><span class="date">2101</span></td>
-            <td class="numero" style="background-color:rgb(213, 99, 3)">21</td>
-            <td class="streetOld">Route du Nord Besançon<br><span class="date">2051</span></td>
+            <td class="street">Avenue Bernadet Chirac<br>Ⓜ1 Bacqueville</td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:rgb(228, 15, 11)">22</td>
             <td class="street">Rue Tsikhanouskaya</td>
-            <td class="numero" style="background-color:rgb(0, 224, 12)">22</td>
-            <td class="streetOld">Rue Bromberger<br><span class="date">2075</span></td>
-        </tr>        
-        <tr class="table">
             <td class="numero" style="background-color:rgb(214, 76, 145)">23 <span class="date">71</span></td>
             <td class="street">Rue Bronski Beat</td>
-            <td class="numero" style="background-color:rgb(34, 204, 120)">23</td>
-            <td class="streetOld">Rue Marie-Antoinette<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(20, 146, 79)">24</td>
             <td class="street">Avenue René Coty</td>
-            <td class="numero" style="background-color:rgb(20, 146, 79)">24</td>
-            <td class="streetOld">Rue Schönberg<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(27, 26, 130)">24</td>
-            <td class="streetOld">Outre-riviere quartier<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(27, 26, 130)">25</td>
-            <td class="streetOld">Boulevard Secretariat<br><span class="date">2108</span>
+            <td class="streetOld">Boulevard Secretariat
                 <br><span class="ferme">fermé jusqu'à nouvel ordre</span></td>
-            <td class="numero" style="background-color:rgb(28, 100, 62)">25</td>
-            <td class="streetOld">Boulevard Jean Valjean<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(223, 3, 113)">25</td>
-            <td class="streetOld">Route du Nord Besançon<br><span class="date">2061</span></td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:#0BDADA;">26</td>
             <td class="street">Boulevard de Sade</td>
-            <td class="numero" style="background-color:rgb(255, 233, 12); color:black;">26</td>
-            <td class="streetOld">Outre-riviere quartier<br><span class="date">2097</span></td>
-            <td class="numero" style="background-color:rgb(255, 134, 0)">26</td>
-            <td class="streetOld">Rue Ockrent<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(204, 107, 9)">27</td>
             <td class="street">Boulevard Jacques Derrida</td>
-            <td class="numero" style="background-color:rgb(240, 1, 6)">27</td>
-            <td class="streetOld">Avenue Radiale <br>Merca<br><span class="date">2101</span></td>
-            <td class="numero" style="background-color:rgb(255, 233, 12); color:black;">27</td>
-            <td class="streetOld">Avenue du Soleil<br><span class="date">2051</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#DADADA; color: black;">28</td>
-            <td class="street">Avenue Patrick Poivre d'Arvor<br>Avenue Radiale</td>
-            <td class="numero" style="background-color:rgb(27, 26, 130)">28</td>
-            <td class="streetOld">Avenue Patrick Poivre d'Arvor<br><span class="date">2101</span></td>
-            <td class="numero" style="background-color:rgb(7, 177, 35)">28</td>
-            <td class="streetOld">Rue France Galle<br><span class="date">2061</span></td>
-            <td class="numero" style="background-color:#999999">28</td>
-            <td class="streetOld">Aeroport <br>Chemin de fer<br><span class="date">2051</span></td>
-        </tr>
-        <tr class="table">
+            <td class="street">Avenue Patrick Poivre d'Arvor<br>Ⓜ12 Lupins</td>
             <td class="numero" style="background-color:rgb(221, 13, 149)">29</td>
             <td class="street">Palo Alto <br>Saint-Laurent</td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:rgb(255, 214, 0); color: black;">30 <span class="date">64</span></td>
+            <td class="numero" style="background-color:#E60000;">30 <span class="date">64</span></td>
             <td class="street">Salpêtriere <br>Aeroport Jean-Michel Jarre</td>
-            <td class="numero" style="background-color:white; color: black;">30</td>
-            <td class="streetOld">Route du Maupassant<br><span class="date">2099</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#E60000;">31</td>
             <td class="street">La Defense <br>Aeroport Jean-Michel Jarre</td>
-            <td class="numero" style="background-color:rgb(255, 214, 0); color: black;">31 <span class="date">65</span></td>
-            <td class="streetOld">La Defense <br>Aeroport Jean-Michel Jarre<br><span class="date">2108</span></td>
-            <td class="numero" style="background-color:rgb(27, 26, 130)">31</td>
-            <td class="streetOld">Avenue Beaumarchais <br>Avenue 31er juillet<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#D3B4F1;">32</td>
-            <td class="street">Avenue Dalida</td>
-            <td class="numero" style="background-color:rgb(8, 66, 209)">32</td>
-            <td class="streetOld">Avenue Danton<br><span class="date">2089</span></td>
-            <td class="numero" style="background-color:rgb(221, 13, 149)">32</td>
-            <td class="streetOld">Avenue Delacrois <br>Avenue Jean-Claude Bourret<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
+            <td class="street">Avenue Dalida <br>Bague Alvar Aalto</td>
             <td class="numero" style="background-color:white; color: black;">33</td>
             <td class="street">Avenue Circulaire</td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:rgb(228, 15, 11)">34 <span class="date">58</span></td>
             <td class="street">Saint-Laurent <br>Aeroport Pierre-Elliot Trudeau</td>
-            <td class="numero" style="background-color:white; color: black;">34</td>
-            <td class="streetOld">Avenue Macron<br><span class="date">2101</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(0, 83, 218)">35</td>
-            <td class="street">Boulevard Margaret Thatcher</td>
-            <td class="numero" style="background-color:rgb(255, 233, 12); color:black;">35</td>
-            <td class="streetOld">Palo Alto Route<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
+            <td class="street">Ⓜ3 Languedoc <br>Charante</td>
             <td class="numero" style="background-color:rgb(0, 220, 224)">36</td>
             <td class="street">Rue Sakharov</td>
-            <td class="numero" style="background-color:rgb(255, 233, 12); color:black;">36</td>
-            <td class="streetOld">Avenue Neuilly<br><span class="date">2075</span></td>
-            <td class="numero" style="background-color:rgb(255, 233, 12); color:black;">36</td>
-            <td class="streetOld">Rue Laurier<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#A1DB24;">37</td>
             <td class="street">Avenue Danton <br>Avenue Languedoc</td>
-            <td class="numero" style="background-color:#A1DB24;">37</td>
-            <td class="streetOld">Avenue Danton<br><span class="date">2106</span></td>
-            <td class="numero" style="background-color:rgb(8, 66, 209)">37</td>
-            <td class="streetOld">Avenue Danton<br><span class="date">2101</span></td>
-            <td class="numero" style="background-color:rgb(255, 255, 7); color: black;">37</td>
-            <td class="streetOld">Avenue Brigitte Nielsen<br><span class="date">2061</span></td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:rgb(255, 255, 7); color: black;">38</td>
             <td class="street">Avenue Brigitte Nielsen</td>
-            <td class="numero" style="background-color:rgb(12, 255, 24)">38</td>
-            <td class="streetOld">Avenue Dalida <br>Avenue Offenbach<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(33, 54, 231)">39</td>
-            <td class="street">Avenue Normandie <br>Ⓜ7 Macron</td>
-            <td class="numero" style="background-color:rgb(33, 54, 231)">39</td>
-            <td class="streetOld">Avenue Normandie <br>Avenue Circulaire<br><span class="date">2108</span></td>
-        </tr>
-        <tr class="table">
+            <td class="street">Avenue Normandie <br>Ⓜ11 Macron</td>
             <td class="numero" style="background-color:rgb(255, 255, 7); color: black;">40</td>
             <td class="street">Boulevard Alain Delon</td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(24, 212, 4)">41 <span class="date">56</span></td>
             <td class="street">Boulevard Michel Foucault</td>
-            <td class="numero" style="background-color:rgb(249, 2, 11)">41</td>
-            <td class="streetOld">Route de Merca<br><span class="date">2101</span></td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#E6DD14;">42</td>
+            <td class="numero" style="background-color:#E6DD14; color:black;">42</td>
             <td class="street">Avenue Zaha Hadid</td>
-            <td class="numero" style="background-color:rgb(0, 224, 12)">42 <span class="date">63</span></td>
-            <td class="streetOld">Rue Duchamp<br><span class="date">2107</span></td>
-            <td class="numero" style="background-color:rgb(218, 147, 0)">42</td>
-            <td class="streetOld">Avenue Georges Perec<br><span class="date">2101</span></td>
-            <td class="numero" style="background-color:rgb(61, 143, 168)">42</td>
-            <td class="streetOld">Avenue Languedoc<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#096ADA;">43</td>
             <td class="street">Avenue Helvetique</td>
-            <td class="numero" style="background-color:rgb(33, 54, 231)">43</td>
-            <td class="streetOld">Avenue Elizabeth II<br><span class="date">2086</span></td>
-            <td class="numero" style="background-color:rgb(33, 54, 231)">43</td>
-            <td class="streetOld">Rue Philips<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(100, 103, 206)">44</td>
             <td class="street">Avenue Jean-Pierre Pernaut</td>
-            <td class="numero" style="background-color:salmon">44</td>
-            <td class="streetOld">Avenue Ronald Reagan<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(27, 26, 230)">45 <span class="date">70</span></td>
             <td class="street">Pays du sport</td>
-            <td class="numero" style="background-color:rgb(77, 220, 29)">45</td>
-            <td class="streetOld">Boulevard Toulouse<br><span class="date">2075</span></td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:rgb(60, 135, 36)">46</td>
-            <td class="street">Boulevard Jean-François Liotard</td>
-            <td class="numero" style="background-color:rgb(29, 201, 220)">46</td>
-            <td class="streetOld">Rue Clermont<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
+            <td class="street">Boulevard Jean-François Liotard</td>        
             <td class="numero" style="background-color:rgb(17, 3, 220)">47<span class="date">55</span></td>
             <td class="street">Avenue Tchecoslovaquie</td>
-            <td class="numero" style="background-color:rgb(255, 233, 12); color:black;">47</td>
-            <td class="streetOld">Boulevard Ceausette<br><span class="date">2061</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(35, 200, 135)">48 <span class="date">53</span></td>
             <td class="street">Boulevard Setton-Thompson</td>
-            <td class="numero" style="background-color:rgb(255, 233, 12); color:black;">48</td>
-            <td class="streetOld">Avenue Robespierre<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(0, 22, 153)">49</td>
             <td class="street">Avenue Nouvelle Industrie</td>
         </tr>
         <tr class="table">
             <td class="numero" style="color:rgb(255, 233, 12); background-color:black;">50</td>
             <td class="street">Avenue Malevich</td>
-            <td class="numero" style="background-color:rgb(117, 8, 10)">50</td>
-            <td class="streetOld">Avenue Ecole Technique<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(220, 0, 3)">51</td>
             <td class="street">Avenue Pierre-Elliot Trudeau</td>
-            <td class="numero" style="background-color:rgb(220, 0, 3)">51</td>
-            <td class="streetOld">Liberte <br> Technique<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(48, 130, 177)">52</td>
-            <td class="street">Avenue Claire Chazal <br>Avenue Étienné Daho</td>
-            <td class="numero" style="background-color:rgb(48, 130, 177)">52</td>
-            <td class="streetOld">Avenue Claire Chazal <br>Avenue Hervé Claude<br><span class="date">2099</span></td>
-            <td class="numero" style="background-color:rgb(48, 130, 177)">52</td>
-            <td class="streetOld">Avenue Rablais <br>Avenue Hervé Claude<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
+            <td class="street">Avenue Claire Chazal <br>Avenue Hérvé Claude</td>
             <td class="numero" style="background-color:#B20C2A;">53</td>
             <td class="street">Route d'Okinawa</td>
-            <td class="numero" style="background-color:#DA0A0A;">53</td>
-            <td class="streetOld">Route d'Okinawa<br><span class="date">2108</span></br></td>
-            <td class="numero" style="background-color:rgb(35, 200, 135)">53</td>
-            <td class="streetOld">Boulevard Setton-Thompson <br><span class="date">2101</span></br></td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#DAD10B;">54</td>
+            <td class="numero" style="background-color:#DAD10B; color: black;">54</td>
             <td class="street">Avenue Jessica Flatcher</td>
-            <td class="numero" style="background-color:rgb(0, 255, 204)">54</td>
-            <td class="streetOld">Avenue Radiale<br><span class="date">2101</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#169D7C;">55</td>
             <td class="street">Avenue Oscar Nimeyer</td>
-            <td class="numero" style="background-color:rgb(17, 3, 220)">55</td>
-            <td class="streetOld">Avenue Tchecoslovaquie <br><span class="date">2101</span></br></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#0B13DA;">56</td>
             <td class="street">Avenue Becquerel</td>
-            <td class="numero" style="background-color:rgb(24, 212, 4)">56</td>
-            <td class="streetOld">Boulevard Michel Foucault <br><span class="date">2101</span></br></td>
-            <td class="numero" style="background-color:rgb(255, 233, 12); color:black;">56</td>
-            <td class="streetOld">Troisieme rue Marquez<br><span class="date">2075</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#B20C2A;">57</td>
             <td class="street">Avenue André-Marie Ampère</td>
-            <td class="numero" style="background-color:rgb(221, 13, 149)">57</td>
-            <td class="streetOld">Avenue des Iconnus<br><span class="date">2075</span></td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:#DEDEDE; color: black;">58</td>
             <td class="street">Avenue Michel Hoellebecq</td>
-            <td class="numero" style="background-color:rgb(228, 15, 11)">58</td>
-            <td class="streetOld">Saint-Laurent <br>Aeroport Pierre-Elliot Trudeau <br><span class="date">2101</span></br></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#1F75DA;">59</td>
             <td class="street">Avenue Freddie Mercury <br>Ⓜ9 Montserrat</td>
-            <td class="numero" style="background-color:rgb(0, 208, 220)">59</td>
-            <td class="streetOld">Boulevard Jean Baudrillard<br><span class="date">2101</span></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#C81B4F;">60</td>
             <td class="street">Boulevard Mireille Matthieu <br> Avenue Helvetique</td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#0B2CDA;">61</td>
             <td class="street">Avenue Xerox</td>
-            <td class="numero" style="background-color:white; color: black;">61</td>
-            <td class="streetOld">Liege <br> Boulevard Alain Delon<br><span class="date">2086</span></td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:#18B1D3;">62</td>
             <td class="street">Avenue Hewlett-Packard</td>
-            <td class="numero" style="background-color:rgb(204, 107, 9)">62</td>
-            <td class="streetOld">Boulevard Jacques Derrida <br><span class="date">2101</span></br></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:rgb(0, 224, 12)">63</td>
-            <td class="street">Rue Duchamp</td>
-        </tr>
-        <tr class="table">
+            <td class="street">Rue Duchamp <br>Ⓜ11 Macron</td>
             <td class="numero" style="background-color:#26BB23;">64</td>
             <td class="street">Boulevard Brigitte Bardot</td>
-            <td class="numero" style="background-color:rgb(255, 214, 0); color: black;">64</td>
-            <td class="streetOld">Salpêtriere <br>Aeroport Jean-Michel Jarre <br><span class="date">2101</span></br></td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#1BDB8A;">65</td>
             <td class="street">Boulevard Perrin</td>
-            <td class="numero" style="background-color:rgb(255, 214, 0); color: black;">65</td>
-            <td class="streetOld">La Defense <br>Aeroport Jean-Michel Jarre<br><span class="date">2101</span></td>
         </tr>
         <tr class="table">
             <td class="numero" style="background-color:#F9AC17;">66</td>
             <td class="street">Boulevard Eric Bulatov</td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#FEF40B; color:black;">67</td>
             <td class="street">Ⓜ9 Montserrat <br>Bague Alvar Aalto <br>Ⓜ3 Toulouse</td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:#FEF40B; color:black;">68</td>
             <td class="street">Boulevard Donald Trump</td>
-        </tr>
-        <tr class="table">
             <td class="numero" style="background-color:gray">69</td>
             <td class="street">Route de Saint-Émillion</td>
-            <td class="numero" style="background-color:#571d2e">69</td>
-            <td class="streetOld">Boulevard Dante<br><span class="date">2101</span></td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#9B0037;">70</td>
-            <td class="street">Avenue Mayakovskï <br>Ⓜ1 Boris Eltsine</td>
-            <td class="numero" style="background-color:rgb(27, 26, 230)">70</td>
-            <td class="streetOld">Pays du sport <br><span class="date">2101</span></br></td>
+            <td class="numero" style="background-color:#5bb600;">70</td>
+            <td class="street">Boulevard Égalité <br> Ⓜ12 Curtis</td>
+            <td class="numero" style="background-color:#0f0adb;">71</td>
+            <td class="street">Les Apôtres <br> Ⓜ9 Perec <br> Ⓜ1 Baudrillard</td>
+            <td class="numero" style="background-color:#4263eb;">72</td>
+            <td class="street">Avenue Daniel Bilalian <br> Ⓜ12 Lupins</td>
+            <td class="numero" style="background-color:#0C2CDA;">73</td>
+            <td class="street">Rue Capoeira <br> Ⓜ6 Zaha Hadid</td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#0e0ada;">71</td>
-            <td class="street">Les Apôtres <br> Ⓜ1 Perec <br> Ⓜ1 Baudrillard</td>
-            <td class="numero" style="background-color:rgb(214, 76, 145)">71</td>
-            <td class="streetOld">Rue Bronski Beat <br><span class="date">2101</span></br></td>
+            <td class="numero" style="background-color:#B50645;">74</td>
+            <td class="street">Frank-Carrel <br> Ⓜ9 Perec</td>
+            <td class="numero" style="background-color:#A30635;">75</td>
+            <td class="street">Frank-Carrel <br> Les Apôtres</td>
+            <td class="numero" style="background-color:#f3f803; color: black;">76</td>
+            <td class="street">Avenue Anjou<br> Ⓜ6 Zaha Hadid</td>
+            <td class="numero" style="background-color:rgb(0,13,197);">77</td>
+            <td class="street">Avenue Nucleaire<br>Voie Radisson</td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#0983DA">72</td>
-            <td class="streetOld">Rue Roland Garros <br><span class="date">2101</span></br></td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(223, 3, 113)">99</td>
-            <td class="street">Route de nuit</td>
+            <td class="numero" style="background-color:#e60000;">78</td>
+            <td class="streetOld">Aeroport Jean-Paul Sartre<br>Aeroport Pierre Elliot Trudeau
+                <br><span class="ferme">fermé jusqu'à nouvel ordre</span></td></td>
         </tr>
     </table>
-
-    <table>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">92</td>
-            <td class="street">Avenue Pernaut</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">93</td>
-            <td class="street">Avenue Passy</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">94</td>
-            <td class="street">Liege Mall</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">95</td>
-            <td class="street">Voie Aviale</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">96</td>
-            <td class="street">Rue Oliver</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">97</td>
-            <td class="street">Trudeau <br>Dante</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">B10</td>
-            <td class="street">Ponte <br>Ⓜ1 Perec</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">B11</td>
-            <td class="street">Saint-Émillion <br>Ⓜ9 Fukushima</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">B12</td>
-            <td class="street">Haute-Bois <br>Ⓜ6 Henri Sannier</td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:rgb(0, 124, 31)">B13</td>
-            <td class="street">Parc des Myriques <br>Ⓜ10 Lupins</td>
-        </tr>
-    </table>
+    <div style="display: flex;">
+    
     <table class="subwayTable">
         <tr class="table">
             <td class="numero" style="background-color:#04BB00;">1</td>
             <td class="subway">
                 <h1>Ligne 1</h1>
-                <span>Perec</span>
                 <span>Baudrillard</span>
-                <span class="rep">Gare Ontario</span><br>
-                <span class="rep">Aeroport Escobar <span class="switch">10</span></span>
-                <span class="rep">Montfermeile <span class="switch">10</span></span><br>
-                <span class="rep">Boris Eltsine <span class="switch">10</span></span>
-                <span class="rep">Liberté <span class="switch">10</span></span><br>
-                <span class="rep">François Mitterrand <span class="switch">10</span></span>
-                <span class="rep">Jacques Chirac <span class="switch">10</span></span>
-                <span class="rep">Valery Giscard d'Estaing <span class="switch">8</span><span class="switch">10</span></span>
+                <span>Bacqueville</span>
+                <span>Dhêliat</span>
+                <span>Aeroport Escobar</span>
+                <span>Monfermeile</span>
+                <span>Boris Eltsine</span>
+                <span>Liberté</span>
+                <span>François Mitterrand</span></span>
+                <span>Jacques Chirac</span>
+                <span>Valery Giscard d'Estaing <span class="switch">8</span></span>
                 <span>Egalité</span>
                 <span>Zola <span class="switch">2</span></span>
             </td>
@@ -601,11 +366,10 @@
             <td class="subway">
                 <h1>Ligne 2</h1>
                 <span>Felix Guattari</span>
-                <span class="rep">Rue Balsac</span>
                 <span>Avenue Vieux</span>
-                <span class="rep">Saint-Girard <span class="switch">10</span></span>
-                <span>Hawking</span>
-                <span class="rep">IKEA <span class="switch">4</span><span class="switch">10</span></span>
+                <span>Saint-Girard <span class="switch">12</span></span>
+                <span>Hawking <span class="switch">12</span></span>
+                <span>IKEA <span class="switch">4</span><span class="switch">8</span><span class="switch">12</span></span>
                 <span>Industrie</span>
                 <span>Zola <span class="switch">1</span></span>
                 <span>Fraternité <span class="switch">3</span></span>
@@ -622,18 +386,16 @@
                 <span>Avignon</span>
                 <span>Fraternite <span class="switch">2</span></span>
                 <span>Dostoevski</span>
-                <span>Rambouteau</span>
                 <span>Meta Modern</span>
-                <span>La&nbsp;Defense&nbsp;<span class="switch">5A</span></span>
-                <span>Mikhaïl&nbsp;Gorbatchev&nbsp;<span class="switch">5</span><span class="switch">5A</span></span>
+                <span>La&nbsp;Defense&nbsp;<span class="switch">6</span></span>
+                <span>Andreï Sakharov <span class="switch">5</span></span>
                 <span>Languedoc</span>
-                <span>Bretagne</span>
                 <span>Libération</span>
                 <span>Brigitte Nielsen</span>
                 <span>Rene Coty</span>
                 <span>Normandie</span>
-                <span>Vichy Laboratoire</span>
-                <span>Toulouse</span>
+                <span>Vichy Laboratoire <span class="switch">7</span></span>
+                <span>Toulouse <span class="switch">9</span></span>
             </td>
         </tr>
         <tr class="table">
@@ -643,8 +405,8 @@
                 <span>Poiville</span>
                 <span>Marie-Antoinette</span>
                 <span>Univers</span>
-                <span>Discret&nbsp;11&nbsp;<span class="switch">8</span></span>
-                <span>IKEA&nbsp;<span class="switch">2</span><span class="switch">10</span></span>
+                <span>Discret&nbsp;11&nbsp;</span>
+                <span>IKEA&nbsp;<span class="switch">2</span><span class="switch">8</span><span class="switch">12</span></span>
                 <span>Leguellec</span>
                 <span>France Galle</span>
                 <span>Osamu Sato</span>
@@ -653,65 +415,53 @@
             </td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#e8ec01;">5</td>
+            <td class="numero" style="background-color:#fef400;color:black;">5</td>
             <td class="subway">
                 <h1>Ligne 5</h1>
                 <span>Delacrois</span>
                 <span>Stendahl</span>
-                <span>31 juillet <span class="switch">5A</span></span>
+                <span>31 juillet <span class="switch">6</span></span>
                 <span>Dalida</span>
-                <span>Mikhaïl Gorbatchev <span class="switch">3</span></span>
+                <span>Andreï Sakharov <span class="switch">3</span></span>
                 <span>Bourret</span>
-                <span>Le&nbsp;Corbusier&nbsp;<span class="switch">6</span></span>
-                <span>Avenue&nbsp;Nucleaire&nbsp;<span class="switch">7</span></span>
+                <span>Le&nbsp;Corbusier&nbsp;<span class="switch">10</span></span>
+                <span>Avenue&nbsp;Nucleaire&nbsp;<span class="switch">11</span></span>
             </td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#d8e453;">5A</td>
+            <td class="numero" style="background-color:#fe5b00;">6</td>
             <td class="subway">
-                <h1>Ligne 5A</h1>
-                <span>Neuilly</span>
+                <h1>Ligne 6</h1>
+                <span>Walter Gropius</span>
+                <span>Montserrat <span class="switch">9</span></span>
+                <span>Zaha Hadid</span>
+                <span>Bronski</span>
                 <span>31 juillet <span class="switch">5</span></span>
                 <span>La Defense <span class="switch">3</span></span>
             </td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#FEFEFE; color: gray;">6</td>
-            <td class="subway">
-                <h1>Ligne 6</h1>
-                <span class="rep"> Pierre Elliot Trudeau</span>
-                <span>Hervé Claude <span class="switch">7</span></span>
-                <span>Henri Sannier</span>
-                <span>Palo Alto</span>
-                <span>Robespierre</span>
-                <span>Ecole Technique</span>
-                <span>Le Corbusier<span class="switch">5</span></span>
-            </td>
-        </tr>
-        <tr class="table">
-            <td class="numero" style="background-color:#FE7A00;">7</td>
+            <td class="numero" style="background-color:#e15252;">7</td>
             <td class="subway">
                 <h1>Ligne 7</h1>
-                <span>Hervé Claude <span class="switch">6</span></span>
-                <span>Maurice Maeterlinck</span>
-                <span>Setton-Thompson</span>
-                <span class="rep">Pernaut</span>
-                <span>Montesquieu</span>
-                <span>Macron</span>
-                <span>Avenue Nucleaire <span class="switch">5</span></span>
+                <span>Vichy Laboratoire <span class="switch">3</span></span>
+                <span>Schönberg</span>
+                <span>Palo Alto <span class="switch">10</span></span>
+                <span>Henri Sannier</span>
+                <span>Hervé Claude</span>
+                <span>Pierre Elliot Trudeau <span class="switch">11</span></span>
             </td>
         </tr>
         <tr class="table">
-            <td class="numero" style="background-color:#AE23DF;">8</td>
+            <td class="numero" style="background-color:#2cb3ec;">8</td>
             <td class="subway">
                 <h1>Ligne 8</h1>
-                <span>Christine Ockrent</span> <br>
                 <span>Champagne&nbsp;<span class="switch">3</span></span>
-                <span>Vatout</span> <br>
-                <span>Prouste</span>
-                <span class="rep">Valery Giscard d'Estaing <span class="switch">1</span><span class="switch">10</span></span> <br>
-                <span>Discret 11 <span class="switch">4</span></span>
-                <span>Avenue Nucleaire <span class="switch">5</span></span>
+                <span>Christine Ockrent</span>                
+                <span>Primakov</span> <br>
+                <span>Prouste <span class="switch">3</span></span>
+                <span>Valery Giscard d'Estaing <span class="switch">1</span></span>
+                <span>IKEA <span class="switch">2</span><span class="switch">4</span><span class="switch">12</span></span>
             </td>
         </tr>
         <tr class="table">
@@ -720,43 +470,94 @@
                 <h1>Ligne 9</h1>
                 <span>Toulouse <span class="switch">3</span></span>
                 <span>Futura</span>
-                <span>Montserrat</span>
+                <span>Montserrat <span class="switch">6</span></span>
                 <span>Fukushima</span>
-                <span>Degauss</span>
+                <span>Pendulum</span>
                 <span>Baudrillard <span class="switch">1</span></span><br>
-                <span>Perec <span class="switch">1</span></span>
+                <span>Perec</span>
+                <span>Les Apôtres</span>
+                <span>Boulevard Fortin</span>
             </td>
         </tr>
-        <!--<tr class="table">
-            <td class="numero" style="font-size: 48px; background-color:#0300B7;">REP1</td>
-            <td class="subway">
-                <h1>Ligne REP1 Trudeau - Besançon</h1>
-                <span class="rep">Pierre Elliot Trudeau <span class="switch">6</span></span>
-                <span class="rep">Pernaut <span class="switch">7</span></span>
-                <span class="rep">Avenue Perec</span>
-                <span class="rep">Besançon</span><br>
-                <span class="rep">Rue Balsac <span class="switch">2</span></span>
-            </td>
-        </tr>-->
         <tr class="table">
-            <td class="numero" style="background-color:#848484;">10</td>
+            <td class="numero" style="background-color:#dcdcdc;color: black;">10</td>
             <td class="subway">
                 <h1>Ligne 10</h1>
-                <span class="rep">Pierre Elliot Trudeau <span class="switch">6</span></span>
-                <span class="rep">Avenue Perec</span>
-                <span class="rep">Besançon</span>
-                <span class="rep">Saint-Girard <span class="switch">2</span></span><br>
-                <span class="rep">IKEA <span class="switch">2</span><span class="switch">4</span></span><br>
-                <span class="rep">Valery Giscard d'Estaing <span class="switch">1</span><span class="switch">8</span></span><br>
-                <span class="rep">Jacques Chirac <span class="switch">1</span></span><br>
-                <span class="rep">François Mitterand <span class="switch">1</span></span>
-                <span class="rep">Liberté <span class="switch">1</span></span>
-                <span class="rep">Boris Eltsine <span class="switch">1</span></span>
-                <span class="rep">Monfermeile <span class="switch">1</span></span>
-                <span class="rep">Aeroport Escobar <span class="switch">1</span></span><br>
-                <span class="rep">Gare Ontario <span class="switch">1</span></span>
+                <span>Le Corbusier <span class="switch">5</span></span>
+                <span>Nouvelle Industrie</span>
+                <span>Palo Alto <span class="switch">7</span></span>
+                <span>Intel</span>
+                <span>Donald Trump</span>
+                <span>Haute-Bois</span>
+            </td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#a3326f;">11</td>
+            <td class="subway">
+                <h1>Ligne 11</h1>
+                <span>Avenue Nucleaire <span class="switch">5</span></span>
+                <span>Macron</span>
+                <span>Montesquieu</span>
+                <span>Nancy Reagan</span>
+                <span>Setton-Thompson</span>
+                <span>Pierre Elliot Trudeau <span class="switch">7</span></span>
+                <span>Salpêtriere <span class="switch">12</span></span>
+                <span>Jean-Paul Sartre <span class="switch">12</span></span>
+            </td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#016D19;">12</td>
+            <td class="subway">
+                <h1>Ligne 12</h1>
+                <span>IKEA <span class="switch">2</span><span class="switch">4</span><span class="switch">8</span></span>
+                <span>Hawking <span class="switch">2</span></span>
+                <span>Saint-Girard <span class="switch">2</span></span>
+                <span>Besançon</span>
+                <span>Jean-Louis Curtis</span>
+                <span>Lupins</span>
+                <span>Salpêtriere <span class="switch">11</span></span>
+                <span>Jean-Paul Sartre <span class="switch">11</span></span>
             </td>
         </tr>
     </table>
+    <table style="height: fit-content; margin-left: 100px;">
+        <tr class="table">
+            <td class="numero" style="background-color:#0d375e;">92</td>
+            <td class="street">Avenue Pernaut</td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#0d375e;">93</td>
+            <td class="street">Avenue Passy</td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#0d375e;">94</td>
+            <td class="street">Liege Mall</td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#0d375e;">95</td>
+            <td class="street">Voie Aviale</td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#0d375e;">96</td>
+            <td class="street">Rue Oliver</td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#0d375e;">97</td>
+            <td class="street">Aeroport Jean-Pierre Trudeau <br>Dante</td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#133d1b;">B11</td>
+            <td class="street">Saint-Émillion <br>Ⓜ9 Fukushima</td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#133d1b;">B12</td>
+            <td class="street">Haute-Bois <br>Ⓜ7 Henri Sannier</td>
+        </tr>
+        <tr class="table">
+            <td class="numero" style="background-color:#133d1b;">B13</td>
+            <td class="street">Parc des Myriques <br>Ⓜ12 Lupins</td>
+        </tr>
+    </table>
+    </div>
 </body>
 </html>
